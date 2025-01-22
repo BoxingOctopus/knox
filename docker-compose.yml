@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  knox:
+    build: .
+    container_name: knox
+    restart: always
+    env:
+      - DISCORD_TOKEN=${DISCORD_TOKEN}
+    
