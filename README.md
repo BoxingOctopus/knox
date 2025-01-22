@@ -9,11 +9,8 @@ Knox (READ: "NO X") is a Discord bot that automatically deletes messages contain
 
 1. Create a Discord bot and get a token: https://discord.com/developers/applications
 2. Set the `DISCORD_TOKEN` environment variable in the `docker-compose.yml` file.
-3. Run `docker compose up -d` to start the bot.
-
-```
-DISCORD_TOKEN=your_discord_token
-```
+3. Set the `LOG_LEVEL` environment variable in the `docker-compose.yml` file.
+4. Run `docker compose up -d` to start the bot.
 
 ## Why?
 
