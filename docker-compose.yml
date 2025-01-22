@@ -5,6 +5,6 @@ services:
     image: ghcr.io/boxingoctopus/knox:latest
     container_name: knox
     restart: always
-    env:
+    environment:
       - DISCORD_TOKEN=${DISCORD_TOKEN}
       - LOG_LEVEL=${LOG_LEVEL}
