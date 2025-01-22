@@ -2,7 +2,7 @@ version: '3.8'
 
 services:
   knox:
-    build: .
+    image: ghcr.io/boxingoctopus/knox:latest
     container_name: knox
     restart: always
     env:
