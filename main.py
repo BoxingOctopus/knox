@@ -21,16 +21,24 @@ async def on_ready():
     logger.info(f'Bot {bot.user} has connected to Discord!')
 
 @bot.event
+async def on_guild_join(guild):
+    logger.info(f'Bot has been added to server: {guild.name} (ID: {guild.id}) with {guild.member_count} members')
+
+@bot.event
+async def on_guild_remove(guild):
+    logger.info(f'Bot has been removed from server: {guild.name} (ID: {guild.id})')
+
+@bot.event
 async def on_message(message):
     # Don't respond to bot messages
     if message.author == bot.user:
         return
 
     # Check for Twitter/X links using regex
-    twitter_pattern = r'https?:\/\/(?:www\.)?(?:twitter\.com|x\.com)\/[a-zA-Z0-9_]+'
+    twitter_pattern = r'https?:\/\/(?:www\.)?(?:twitter\.com|x\.com|fxtwitter\.com)\/[a-zA-Z0-9_]+'
     
     if re.search(twitter_pattern, message.content, re.IGNORECASE):
-        logger.info(f'Detected Twitter/X link in message from {message.author} (ID: {message.author.id}) in channel #{message.channel.name}')
+        logger.info(f'Detected Twitter/X link in message from {message.author} (ID: {message.author.id}) in channel #{message.channel.name} on server {message.guild.name}')
         
         # Delete the message
         await message.delete()
