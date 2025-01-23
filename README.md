@@ -2,6 +2,8 @@
 
 ![Knox](./knox.png)
 
+## [ADD KNOX TO YOUR SERVER](https://discord.com/oauth2/authorize?client_id=1331672737860550747)
+
 ## Introduction
 Knox (READ: "NO X") is a Discord bot that automatically deletes messages containing Twitter/X links in any channel on servers where it is added.
 
