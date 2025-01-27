@@ -1,5 +1,5 @@
 header {
-    background-color: $white;
+    // background-color: $white;
     padding: $spacing-unit;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     
@@ -22,12 +22,15 @@ main {
     max-width: $container-max-width;
     margin: 0 auto;
     padding: $spacing-unit * 2;
+    background-image: url('/assets/images/discord-invite-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 footer {
     text-align: center;
     padding: $spacing-unit * 2;
-    background-color: $discord-dark;
     color: $white;
     margin-top: $spacing-unit * 4;
     

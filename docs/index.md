@@ -3,9 +3,8 @@ layout: default
 title: Home
 ---
 
-# Knox
-![Knox Logo](assets/images/knox-logo.png)
 <section class="hero">
+    <img src="{{ '/assets/images/knox-logo.png' | relative_url }}" alt="Knox Logo" class="hero-logo">
     <h2>Automatically Remove Twitter/X Links in Your Discord Server</h2>
     <p>Knox is a simple but powerful Discord bot that automatically removes Twitter/X links and notifies users.</p>
     <a href="{{ '/install' | relative_url }}" class="cta-button">Add to Discord</a>

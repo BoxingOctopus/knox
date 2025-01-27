@@ -1,14 +1,25 @@
-<header>
-    <nav>
-        <ul class="dropdown menu" data-dropdown-menu>
-            <li class="menu-text"><img src="{{ '/assets/images/knox-logo.png' | relative_url }}" alt="{{ site.title}}" class="nav-logo"></li>
-            <li class="menu-text">{{ site.title }}</li>
-            <li>
-                <a href="{{ '/' | relative_url }}" {% if page.url == '/' %}class="active"{% endif %}>Home</a>
-            </li>
-            <li>
-                <a href="{{ '/install' | relative_url }}" {% if page.url == '/install' %}class="active"{% endif %}>Install</a>
-            </li>
-        </ul>
-    </nav>
-</header> 
+<div data-sticky-container>
+    <header class="top-bar sticky" data-sticky data-options="marginTop:0;" style="width:100%" data-top-anchor="1" data-btm-anchor="content:bottom">
+        <nav class="top-bar-left sticky">
+            <div class="title-bar-left">
+                <ul class="dropdown menu" data-dropdown-menu>
+                    <li class="menu-text"><img src="{{ '/assets/images/knox-logo.png' | relative_url }}" alt="{{ site.title}}" class="nav-logo"></li>
+                    <li class="menu-text">{{ site.title }}</li>
+                </ul>
+            </div>
+            <div class="title-bar-right">
+                <ul class="dropdown menu" data-dropdown-menu>
+                    <li>
+                        <a href="{{ '/' | relative_url }}" {% if page.url == '/' %}class="active"{% endif %}>Home</a>
+                    </li>
+                    <li>
+                        <a href="{{ '/install' | relative_url }}" {% if page.url == '/install' %}class="active"{% endif %}>Install</a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/boxingoctopus/knox" {% if page.url == '/docs' %}class="active"{% endif %}>GitHub</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header> 
+</div>

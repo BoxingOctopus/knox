@@ -3,6 +3,10 @@
     padding: $spacing-unit * 4 $spacing-unit * 2;
 }
 
+.hero-logo {
+    padding: $spacing-unit * 2;
+}
+
 .cta-button {
     display: inline-block;
     background-color: $discord-blue;
@@ -24,8 +28,13 @@
     height: 64px;
 }
 
-.top-bar {
+.top-bar, .top-bar ul {
     background-color: $black;
+}
+
+.top-bar-left {
+    background-color: $black;
+
 }
 
 .features {

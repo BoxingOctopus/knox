@@ -4,6 +4,10 @@ body {
     line-height: $line-height-base;
     color: lighten($discord-darker, 80%);
     background-color: $discord-dark;
+    background-image: url('/assets/images/discord-invite-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     margin: 0;
     padding: 0;
 }
