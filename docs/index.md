@@ -4,9 +4,12 @@ title: Home
 ---
 
 <section class="hero">
-    <img src="{{ '/assets/images/knox-logo.png' | relative_url }}" alt="Knox Logo" class="hero-logo">
-    <h2>Automatically Remove Twitter/X Links in Your Discord Server</h2>
-    <p>Knox is a simple but powerful Discord bot that automatically removes Twitter/X links and notifies users.</p>
+    <img src="{{ '/assets/images/banner-logo.png' | relative_url }}" alt="Knox Banner" class="hero-banner">
+</section>
+
+<section class="hero">
+    <h3 class="tagline">If it’s a tweet from that billionaire cheat, auto-delete and keep things neat!</h3>
+    <h5>Knox is a simple but powerful Discord bot that automatically removes Twitter/X links and notifies users. </h5>
     <a href="{{ '/install' | relative_url }}" class="cta-button">Add to Discord</a>
 </section>
 

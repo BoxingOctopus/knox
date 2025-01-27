@@ -5,9 +5,8 @@ body {
     color: lighten($discord-darker, 80%);
     background-color: $discord-dark;
     background-image: url('/assets/images/discord-invite-bg.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    background-size: 50%;
+    background-repeat: repeat;
     margin: 0;
     padding: 0;
 }
