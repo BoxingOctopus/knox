@@ -1,0 +1,24 @@
+title: Knox Discord Bot
+description: A Discord bot that helps manage Twitter/X links in your server
+url: https://knox.boxingoctopus.io
+baseurl: ""
+
+# Build settings
+markdown: kramdown
+
+# Explicitly enable SASS processing
+sass:
+  style: compressed
+  load_paths:
+    - _sass
+    - css
+
+plugins:
+  - jekyll-seo-tag
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor 

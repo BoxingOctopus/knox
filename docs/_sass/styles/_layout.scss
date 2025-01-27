@@ -1,0 +1,37 @@
+header {
+    background-color: $white;
+    padding: $spacing-unit;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    
+    nav {
+        display: flex;
+        gap: $spacing-unit;
+        
+        a {
+            color: $discord-darker;
+            font-weight: 500;
+            
+            &.active {
+                color: $discord-blue;
+            }
+        }
+    }
+}
+
+main {
+    max-width: $container-max-width;
+    margin: 0 auto;
+    padding: $spacing-unit * 2;
+}
+
+footer {
+    text-align: center;
+    padding: $spacing-unit * 2;
+    background-color: $discord-dark;
+    color: $white;
+    margin-top: $spacing-unit * 4;
+    
+    a {
+        color: $white;
+    }
+} 

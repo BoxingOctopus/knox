@@ -1,0 +1,58 @@
+.hero {
+    text-align: center;
+    padding: $spacing-unit * 4 $spacing-unit * 2;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: $discord-blue;
+    color: $white;
+    padding: $spacing-unit $spacing-unit * 2;
+    border-radius: 8px;
+    font-weight: bold;
+    margin: $spacing-unit 0;
+    transition: background-color 0.3s ease;
+    
+    &:hover {
+        background-color: darken($discord-blue, 10%);
+        text-decoration: none;
+    }
+}
+
+.nav-logo {
+    width: 64px;
+    height: 64px;
+}
+
+.top-bar {
+    background-color: $black;
+}
+
+.features {
+    margin: $spacing-unit * 4 0;
+    
+    ul {
+        list-style-type: none;
+        padding: 0;
+    }
+    
+    li {
+        margin: $spacing-unit 0;
+        padding-left: $spacing-unit * 1.5;
+        position: relative;
+        
+        &:before {
+            content: "✓";
+            color: $discord-blue;
+            position: absolute;
+            left: 0;
+        }
+    }
+}
+
+.install-notes {
+    margin-top: $spacing-unit * 3;
+    padding: $spacing-unit * 2;
+    background-color: lighten($discord-dark, 65%);
+    border-radius: 8px;
+} 

@@ -1,0 +1,14 @@
+<header>
+    <nav>
+        <ul class="dropdown menu" data-dropdown-menu>
+            <li class="menu-text"><img src="{{ '/assets/images/knox-logo.png' | relative_url }}" alt="{{ site.title}}" class="nav-logo"></li>
+            <li class="menu-text">{{ site.title }}</li>
+            <li>
+                <a href="{{ '/' | relative_url }}" {% if page.url == '/' %}class="active"{% endif %}>Home</a>
+            </li>
+            <li>
+                <a href="{{ '/install' | relative_url }}" {% if page.url == '/install' %}class="active"{% endif %}>Install</a>
+            </li>
+        </ul>
+    </nav>
+</header> 
